@@ -1,38 +1,367 @@
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
+    text-align: center;
+  }
+  
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* src/main/resources/static/css/style.css */
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Navigation Bar Styles */
+  .navbar {
+    background-color: #343a40; /* Navbar background color */
   }
+  
+  .navbar a {
+    color: white !important; /* Navbar link color */
+    margin-right: 40px;
+  }
+  .navbar .nav-item:hover{
+     background-color: #007bff;
+    animation: 1s ease-out;
+  }
+  .navbar .active{
+    background-color: #007bff;
+  }
+  .navbar-brand{
+    margin-left: 40px;
+  }
+  
+  .title1{
+    background-color: #007bff;
+    border-radius: 15% 25%;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+  }
+  
+  .title2{
+    background-color: #c97b03;
+    border-radius: 15% 25%;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+  }
+  h1{
+    color: #ffa600;
+    font-weight: bold;
+  }
+  .navbar-toggler-icon {
+    background-color: white; /* Navbar toggle button color */
+  }
+  
+  /* src/main/resources/static/css/style.css */
+  /* Your existing CSS */
+  
+  .home {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/img/dbeeb.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .animated-text {
+    z-index: 2;
+    text-align: center; /* Ensure text is centered horizontally */
+  }
+  
+  .animated-text h1,
+  .animated-text p {
+    animation-duration: 2s;
+    margin: 0; /* Remove any default margins */
+    display: inline-block; /* Ensure inline-block display for centering */
+  }
+  
+  /* Your existing CSS */
+  
+  /* Additional Styles for Auto-Writing Text */
+  .name-container {
+    animation: fadeInDown 1s ease forwards; /* Use the same duration as in the HTML */
+  }
+  
+  .profile-container {
+    animation: fadeInUp 1s ease forwards 1s; /* Use the same duration and delay as in the HTML */
+  }
+  
+  /* Additional Styles for Auto-Writing Text */
+  #auto-writer,
+  #auto-writer-p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    margin: 0; /* Remove any default margins */
+    display: inline-block; /* Ensure inline-block display for centering */
+  }
+  h2{
+    background-color: #ffa600;
+    width: 50%;
+    font-size: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Nice box-shadow effect */
+    transition: box-shadow 0.3s ease-in-out;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+  }
+  
+  /* Additional Styles for Auto-Writing Text */
+  #auto-writer-p {
+    animation: fadeInUp 1s ease forwards; /* Use the same duration and delay as in the HTML */
+  }
+  
+  /* Additional Styles for Social Media Icons */
+  .social-icons {
+    margin-top: 20px;
+    position: relative; /* Ensure relative positioning */
+    z-index: 2; /* Ensure social icons are above the background */
+  
+  }
+  
+  .social-icons a i{
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add smooth transition on color change */
+    font-weight: bold;
+    margin: 25px;
+    height:  60px;
+    border : 1px solid #ffffff;
+    width:  60px;
+    line-height: 60px;
+    border-radius: 50%;
+  }
+  
+  .social-icons a i:hover {
+    color: #55acee; /* Change the color on hover as needed */
+    background-color: #ffa600;
+  }
+  .about-desc {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 2px 2px 2px 2px transparent;
+    text-align: start;
+  }
+
+  
+  #about {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  
+  /* Formation Section */
+  #formation {
+    background-color: #ffffff;
+    padding: 50px 0;
+  }
+  
+  .formation-item {
+    margin-bottom: 20px;
+  }
+  
+  /* Skills Section */
+  #skills {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #ffffff;
+    padding: 50px 0;
+  }
+  
+  #contact p {
+    margin: 0;
+  }
+  
+  /*  icon formation   */
+  
+  .circle-icon i{
+    border-radius: 50%; /* Make it circular */
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    color: #343a40;
+    margin: 0 35%;
+    border: 1px solid #343a40;
+  }
+  .card{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Nice box-shadow effect */
+    transition: box-shadow 0.3s ease-in-out;
+    border: none;
+    animation: fadeInUp 1s ease forwards; /* Use the same duration and delay as in the HTML */
+  
+  }
+  .card:hover{
+    background: #c97b03;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  h5{
+    font-weight: bold;
+  }
+  
+  .footer {
+    background-color: #343a40; /* Dark background color */
+    color: white;
+    padding: 20px 0;
+    position: relative;
+  }
+  .footer i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .go-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #007bff; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  #contactModal {
+    text-align: center;
+  }
+  #contactModal .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #c97b03;
+  
+  }
+  #contactModal .robot-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+  .download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6b6b6b; /* Button background color */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Nice box-shadow effect */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .download-button:hover {
+    box-shadow: 0 8px 12px rgba(255, 255, 255, 0.2); /* Adjusted box-shadow on hover */
+  }
+
+p{
+    font-size: 21px;
 }
+  .App {
+    text-align: center;
+  }
+  
+  /* ... (other styles) ... */
+  
+  /* Responsive Styles */
+  @media (max-width: 767px) {
+    .home {
+      height: 400px;
+    }
+  
+    .title1,
+    .title2,
+    h2 {
+      width: 100%;
+    }
+  
+    .about-desc {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .home {
+      height: 600px;
+    }
+  
+    .title1,
+    .title2,
+    h2 {
+      width: 70%;
+    }
+  
+    .about-desc {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .home {
+      height: 800px;
+    }
+  
+    .title1,
+    .title2,
+    h2 {
+      width: 50%;
+    }
+  
+    .about-desc {
+      font-size: 20px;
+    }
+    #formation{
+        text-align: center;
+        margin-left: 21px;
+    }
+  }
+  
+  /* ... (remaining styles) ... */
+  
