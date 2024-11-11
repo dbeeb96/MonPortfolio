@@ -520,12 +520,12 @@ function App() {
       <p>
         <i className="fas fa-phone" /> +221 609 19 32
         <span className="mx-3">|</span>
-        <i className="fas fa-envelope" /> Babacar.diagne2@unchk.edu.sn
+        <i className="fas fa-envelope" /> dbeeb96@gmail.com
       </p>
       {/* Social Icons */}
       {/* Go to Top Button */}
       <button className="go-to-top-btn" onclick="goToTop()">
-        <i className="fas fa-arrow-up" /> Go to Top
+        <i className="fas fa-arrow-up" /> Basculer vers le haut
       </button>
       <div>
       <a href="https://github.com/dbeeb96" target="_blank" title="GitHub"><i className="fab fa-github" /></a>
